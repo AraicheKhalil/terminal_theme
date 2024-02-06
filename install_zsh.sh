@@ -1,7 +1,13 @@
 #!/bin/sh
 
 # Install Zsh + Oh My Zsh + Powerlevel10k theme (macOS & Linux)
-# run: sh -c "$(curl -fsSL "$(echo "$(curl -s "https://api.github.com/gists/254e58bd87009963b3f58405d75cbe6c")" | grep -o '"raw_url": *"[^"]*"' | cut -d'"' -f4)")"
+# run: sudo apt install zsh | sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" | git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+# Download all fonts from fonts folder and choice MesloLGS NF Regulare (in tweaks)
+# # run: gedit ~/.zshrc =>  edit:  ZSH_THEME="powerlevel10k/powerlevel10k"
+
+# Install plugins : 
+#run: git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting | git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# run: gedit ~/.zshrc =>  edit: plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 # Remove installations + configurations
 rm -f ~/.p10k.zsh
